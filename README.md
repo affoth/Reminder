@@ -25,7 +25,8 @@ Requirements
 
 Compilation
 --------------
-This program relies on the MiniLibX library, a library I do not have controll over: https://github.com/42Paris/minilibx-linux.git
+This program relies on the MiniLibX library, a library I do not have controll over:
+https://github.com/42Paris/minilibx-linux.git
 It is cloned during the make process. The copyright belongs to Ecole 42.
 (Copyright (c) 2021, Ecole 42)
 
@@ -37,7 +38,8 @@ Autostart (Optional)
 To make the program launch on login (no root required):
 
 WARNING!
-before you do, run the program as is, uncoment the debug statement in src/reminder.c -> main (all the way at the end of the file)
+before you add the program to autostart:
+run the program as is, uncomment the debug statement in src/reminder.c -> main (all the way at the end of the file)
 and run the program in the terminal. The program is an infinite loop, before you add it to autostart you should double check that
 it closes correctly.
 
