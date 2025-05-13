@@ -6,7 +6,7 @@
 /*   By: afoth <afoth@student.42berlin.de>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:19:55 by afoth             #+#    #+#             */
-/*   Updated: 2025/05/13 17:23:32 by afoth            ###   ########.fr       */
+/*   Updated: 2025/05/13 18:19:55 by afoth            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <time.h>
-#include <X11/keysym.h> 
+#include <X11/keysym.h>
 
 /* CHANGE FOR TIME TO POPUP IN MINUTES */
 #define POPUPTIME 30
@@ -52,7 +52,7 @@ int	ft_close_window(t_mlx *mlx)
 	exit(0);
 	return (0);
 }
-
+//Keypresses are handled with the X11/keysym.h lib
 int	keypress(int keycode, t_mlx *mlx)
 {
 	// printf("Key pressed: %d\n", keycode); // Uncomment for debugging keycodes
@@ -116,10 +116,11 @@ void	show_reminder(void)
 
 int	main(void)
 {
+	printf("Program Reminder_exe started,\nif you want to be able to close the terminal run the program like this: ./Reminder_exe & disown\n");
 	while (1)
 	{
 		// sleep(5); //for quick debuging, carefull can open a lot of windows!
-		sleep(POPUPTIME * 60);
+		sleep(POPUPTIME * 60); //comment out for quick debuging
 		show_reminder(); // Blocks until 'y' or ESC
 	}
 	return (0);
