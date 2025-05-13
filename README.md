@@ -31,7 +31,7 @@ It is cloned during the make process. The copyright belongs to Ecole 42.
 (Copyright (c) 2021, Ecole 42)
 
 make
-to run program: ./Reminder
+to run program: ./Reminder_exe
 
 Autostart (Optional)
 -----------------------
@@ -44,14 +44,14 @@ and run the program in the terminal. The program is an infinite loop, before you
 it closes correctly.
 
 1. Place the compiled binary in a known location, e.g. `~/bin/Reminder`
-2. Make sure Reminder (the compiled binary) is executable (ls -l), if not use chmod +x
+2. Make sure Reminder_exe (the compiled binary) is executable (ls -l), if not use chmod +x
 3. Create a file named reminder.desktop in the folder ~/.config/autostart/
 4. Enter the following lines in it:
 
 ```
 [Desktop Entry]
 Type=Application
-Exec=/home/yourusername/bin/Reminder
+Exec=/home/yourusername/bin/Reminder/Reminder_exe
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

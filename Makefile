@@ -1,5 +1,5 @@
 
-NAME = Reminder
+NAME = Reminder_exe
 
 SRC_DIR = src/
 SRC = reminder.c
