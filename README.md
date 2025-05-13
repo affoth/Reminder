@@ -34,10 +34,10 @@ Autostart (Optional)
 -----------------------
 To make the program launch on login (no root required):
 
-!!!WARNING!!!
- before you do, run the program as is, uncoment the debug statement in src/reminder.c -> main (all the way at the end of the file)
- and run the program in the terminal. The program is an infinite loop, before you add it to autostart you should double check that
- it closes correctly.
+WARNING!
+before you do, run the program as is, uncoment the debug statement in src/reminder.c -> main (all the way at the end of the file)
+and run the program in the terminal. The program is an infinite loop, before you add it to autostart you should double check that
+it closes correctly.
 
 1. Place the compiled binary in a known location, e.g. `~/bin/Reminder`
 2. Make sure Reminder (the compiled binary) is executable (ls -l), if not use chmod +x
