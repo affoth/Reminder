@@ -19,7 +19,9 @@ Customize
 
 Requirements
 ---------------
-- **Linux** system
+- Linux system (X11)
+- GCC compiler
+- Internet connection (only for the first `make`, to clone MiniLibX)
 
 Compilation
 --------------
