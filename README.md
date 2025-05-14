@@ -59,11 +59,6 @@ Name=Reminder
 Comment=Popup to keep me focused
 ```
 
-Bugs
-----------
-If you find a bug or suggest an improvement you can contact me by email:
-afoth@student.42berlin.de
-
 License
 ----------
 MIT — free to use, modify, and share.
